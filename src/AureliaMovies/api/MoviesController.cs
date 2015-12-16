@@ -68,6 +68,7 @@ namespace AureliaMovies.Api.Controllers
                 _db.SaveChanges();
                 return new ObjectResult(movie);
             }
+            else
             return HttpNotFound();
         }
     }
